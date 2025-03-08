@@ -81,7 +81,7 @@ int SetupOpenVR()
         printf("Error creating overlay 2\n");
         return -422;
     };
-    // Create the second overlay
+    // Create the third overlay
     if (oOverlay->CreateOverlay("panel3-overlay", "Panel 3", &ulHandle3) == EVRInitError_VRInitError_None)
     {
         printf("Overlay 3 created successfully with handle: %llx\n", ulHandle3);
@@ -91,7 +91,7 @@ int SetupOpenVR()
         printf("Error creating overlay 3\n");
         return -422;
     };
-    // Create the second overlay
+    // Create the fourth overlay
     if (oOverlay->CreateOverlay("panel4-overlay", "Panel 4", &ulHandle4) == EVRInitError_VRInitError_None)
     {
         printf("Overlay 4 created successfully with handle: %llx\n", ulHandle4);
@@ -203,15 +203,15 @@ int main()
         CNFGColor(0xffffffff);
         CNFGPenX = 1;
         CNFGPenY = 1;
-        CNFGDrawText("Panel 1", 4);
+        CNFGDrawText("Text 1", 4);
         CNFGPenX = 1;
         CNFGPenY = 100;
-        CNFGDrawText("Panel 2", 4);
+        CNFGDrawText("Text 2", 4);
 
         // Render the textures as quads on the screen with their respective overlays
         glEnable(GL_TEXTURE_2D);  // Enable texture mapping
 
-        // First texture (panel 1)
+        // First texture (pane)
         glBindTexture(GL_TEXTURE_2D, texture); 
         glBegin(GL_QUADS);  
         glTexCoord2f(0.0f, 0.0f); glVertex2f(-0.5f, -0.5f); // Bottom-left corner
