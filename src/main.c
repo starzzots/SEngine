@@ -22,7 +22,7 @@ int HandleDestroy() { return 0; }
 
 struct VR_IVRSystem_FnTable *oSystem;
 struct VR_IVROverlay_FnTable *oOverlay;
-VROverlayHandle_t ulHandle1, ulHandle2, ulHandle3, ulHandle4, ulHandle5, ulHandle6;  // Handles for two overlays I need to make this into a funct
+VROverlayHandle_t ulHandle1, ulHandle2, ulHandle3, ulHandle4;  // Handles for overlays I need to make this into a funct
 
 // Define CNOVRGetOpenVRFunctionTable
 void *CNOVRGetOpenVRFunctionTable(const char *interfacename)
