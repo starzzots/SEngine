@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "rawdraw_sf.h": "c",
+        "openvr_capi.h": "c"
+    }
+}
