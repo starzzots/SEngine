@@ -1,6 +1,6 @@
-# SEngine - OpenVR & GLFW Example
+# SEngine - OpenVR & OpenGL
 
-This project demonstrates a basic integration of OpenVR, GLFW, and OpenGL in C for VR development using the Oculus Quest 2 and other VR systems. The code provides an example of setting up an overlay using OpenVR and rendering textures in a VR environment with OpenGL.
+This project demonstrates a basic integration of OpenVR, GLFW, and OpenGL with rawdraw in C for VR development using the Oculus Quest 2 and other VR systems. The code provides an example of setting up an overlay using OpenVR and rendering textures in a VR environment with OpenGL.
 
 ## Features
 
